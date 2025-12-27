@@ -146,7 +146,6 @@ function openDetail(index) {
     document.getElementById('detail-price').innerText = car.price;
     document.getElementById('detail-desc').innerText = car.desc;
 
-    // Toggle Visibility
     document.querySelector('.hero-content').style.display = 'none';
     document.querySelector('.card-section').style.display = 'none';
     document.querySelector('.pagination-container').style.display = 'none';
