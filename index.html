@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="main-navbar">
+        <div class="nav-logo">CarZo</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#" onclick="showPage('news')">News</a></li>
+            <li><a href="#" onclick="showPage('contacts')">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <section id="about-view" class="page-section" style="display: none;">
+        <div class="content-container">
+            <h1>About CarZo</h1>
+            <p>We are the leading car marketplace...</p>
+        </div>
+    </section>
+
+    <section id="news-view" class="page-section" style="display: none;">
+        <div class="content-container">
+            <h1>Latest Automotive News</h1>
+            <article>
+                <h3>New EV Tax Credits Announced</h3>
+                <p>Date: Oct 2023</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contacts-view" class="page-section" style="display: none;">
+        <div class="content-container">
+            <h1>Contact Us</h1>
+            <p>Email: office@carzo.com</p>
+            <p>Phone: +359 888 123 456</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="button" class="buy-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>CarZo</h1>
+            <p>Your Trusted Car Marketplace</p>
+        </div>
+    </section>
+
+    <section class="card-section">
+        <div class="card-container">
+
+            <div class="car-card">
+                <div class="card-image">
+                    <img src="/porsche911.jpg" alt="Porsche 911">
+                </div>
+                <div class="card-content">
+                    <span class="car-category">Sport</span>
+                    <h3 class="car-title">Porsche 911</h3>
+                    <p class="car-price">$180,000</p>
+                    <p class="car-desc">Low mileage, excellent condition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="pagination-container">
+        <button id="prevBtn" class="page-btn">
+            &larr; Previous
+        </button>
+
+        <button id="nextBtn" class="page-btn">
+            Next &rarr;
+        </button>
+    </div>
+
+    <section id="detail-view" style="display: none;">
+        <div class="detail-container">
+
+            <button id="backBtn" class="back-link" onclick="showPage('home')">&larr; Back to Listings</button>
+
+            <div class="detail-content">
+                <div class="detail-image">
+                    <img id="detail-img" src="" alt="Car Image">
+                </div>
+
+                <div class="detail-info">
+                    <span id="detail-category" class="car-category">Category</span>
+                    <h1 id="detail-title">Car Name</h1>
+                    <h2 id="detail-price">$0</h2>
+                    <p id="detail-desc">Description goes here...</p>
+
+                    <div class="action-buttons">
+                        <button class="buy-btn">Contact Seller</button>
+                        <button class="test-drive-btn">Request Test Drive</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CarZo</h3>
+                <p>Your trusted car partner.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" onclick="showPage('home')">Home</a>
+                <a href="#" onclick="showPage('about')">About</a>
+                <a href="#" onclick="showPage('privacy')">Privacy Policy</a> <a href="https://facebook.com"
+                    target="_blank">Facebook</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 CarZo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
